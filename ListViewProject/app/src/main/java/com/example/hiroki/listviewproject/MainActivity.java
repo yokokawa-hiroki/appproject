@@ -33,9 +33,9 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            String order = (String)parent.getItemAtPosition(position);
-            TextView text = findViewById(R.id.output);
-            text.setText(order + "食べたい！！");
+            OrderCheckDialogFragment fragment = new OrderCheckDialogFragment();
+            fragment.show(getSupportFragmentManager(),"OrderCheckDialogFragment");
+
         }
     }
 
