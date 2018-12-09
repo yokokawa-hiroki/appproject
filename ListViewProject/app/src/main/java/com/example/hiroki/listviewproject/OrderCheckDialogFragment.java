@@ -36,11 +36,9 @@ public class OrderCheckDialogFragment extends DialogFragment {
             switch (which) {
                 case DialogInterface.BUTTON_POSITIVE:
                     str = "ご注文を承りました";
-
                     break;
                 case DialogInterface.BUTTON_NEGATIVE:
                     str = "ご注文をキャンセルしました";
-
                     break;
             }
             Toast.makeText(getActivity(), str , Toast.LENGTH_LONG).show();
